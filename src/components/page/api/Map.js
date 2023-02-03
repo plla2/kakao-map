@@ -74,7 +74,7 @@ const Map = ({ searchPlace }) => {
 
     // 검색결과 목록 하단에 페이지 번호 표시
     function displayPagination(pagination) {
-      var paginationEl = document.getElementById("pagination"),
+      let paginationEl = document.getElementById("pagination"),
         fragment = document.createDocumentFragment(),
         i;
 
@@ -84,7 +84,7 @@ const Map = ({ searchPlace }) => {
       }
 
       for (i = 1; i <= pagination.last; i++) {
-        var el = document.createElement("a");
+        let el = document.createElement("a");
         el.href = "#";
         el.innerHTML = i;
 
